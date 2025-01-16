@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindMyProf - Compose Email</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/professors.js"></script>
+    <script src="js/email-system.js"></script>
+</head>
+<body>
+    <header>
+        <h1>FindMyProf</h1>
+        <div class="header-actions">
+            <a href="index.html">Home</a>
+        </div>
+    </header>
+    <main>
+        <section class="email-composer fade-in">
+            <h2>Compose Email</h2>
+            
+            <!-- Clear recipient list display at the top -->
+            <div id="recipient-list" class="recipient-list">
+                <!-- Recipients will be displayed here -->
+            </div>
+
+            <form id="email-form" class="email-form">
+                <div class="form-group">
+                    <label for="sender-email">Your Email:</label>
+                    <input type="email" id="sender-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="email-subject">Subject:</label>
+                    <input type="text" id="email-subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="email-message">Message:</label>
+                    <textarea id="email-message" rows="10" required></textarea>
+                </div>
+                <button type="submit" id="send-button" class="send-button">Send Email</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 FindMyProf</p>
+    </footer>
+</body>
+</html> 
