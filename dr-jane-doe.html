@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Jane Doe</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeInElements = document.querySelectorAll('.fade-in');
+            fadeInElements.forEach(element => {
+                element.style.opacity = '1';
+                element.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Dr. Jane Doe</h1>
+    </header>
+    <main>
+        <section class="fade-in">
+            <h2>Research Interests</h2>
+            <p>Quantum Mechanics, Astrophysics</p>
+            <h2>Biography</h2>
+            <p>Dr. Jane Doe is a leading researcher in the fields of Quantum Mechanics and Astrophysics. With over 20 years of experience, she has published numerous papers and is passionate about mentoring the next generation of physicists.</p>
+            <h2>Contact Information</h2>
+            <p>Email: jane.doe@mcgill.ca</p>
+            <button onclick="alert('Contact Dr. Jane Doe')">Contact</button>
+            <button onclick="alert('Added Dr. Jane Doe to Broadcast List')">Add to Broadcast List</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 McGill Research Connect</p>
+    </footer>
+</body>
+</html> 
