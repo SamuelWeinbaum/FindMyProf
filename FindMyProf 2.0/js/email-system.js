@@ -59,4 +59,29 @@ function updateEmailDisplay() {
 document.addEventListener('DOMContentLoaded', () => {
     loadEmailList();
     updateEmailDisplay();
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const emailForm = document.getElementById('email-form');
+    const recipientListDiv = document.getElementById('recipient-list');
+
+    // Retrieve the broadcast list from local storage
+    const broadcastList = JSON.parse(localStorage.getItem('broadcastList')) || [];
+
+    // Display the list of recipients
+    recipientListDiv.innerHTML = broadcastList.map(name => `<p>${name}</p>`).join('');
+
+    emailForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const senderEmail = document.getElementById('sender-email').value;
+        const emailSubject = document.getElementById('email-subject').value;
+        const emailMessage = document.getElementById('email-message').value;
+
+        // Create a mailto link
+        const mailtoLink = `mailto:?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailMessage)}`;
+
+        // Open the mailto link
+        window.location.href = mailtoLink;
+    });
 }); 
