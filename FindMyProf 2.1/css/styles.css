@@ -1,0 +1,402 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-actions {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.compose-button {
+    background-color: #fff;
+    color: #000;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.compose-button:hover {
+    background-color: #f8f9fa;
+}
+
+main {
+    padding: 20px;
+    min-height: calc(100vh - 140px);
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.subject-item {
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #333;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    width: fit-content;
+}
+
+.subject-link {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.subject-item:hover {
+    background-color: #555;
+}
+
+.profile {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 3px solid transparent;
+}
+
+.available {
+    border-color: #28a745;
+}
+
+.unavailable {
+    border-color: #dc3545;
+    opacity: 0.7;
+}
+
+.profile-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.profile-link:hover {
+    background-color: #333;
+}
+
+.action-buttons {
+    margin-top: 20px;
+}
+
+.action-buttons button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.action-buttons button:hover {
+    background-color: #333;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+
+.status-indicator {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.status-indicator.available {
+    background-color: rgba(40, 167, 69, 0.1);
+    color: #28a745;
+}
+
+.status-indicator.unavailable {
+    background-color: rgba(220, 53, 69, 0.1);
+    color: #dc3545;
+}
+
+/* Email composer styles */
+.email-composer {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.recipient-list {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.recipients-header {
+    border-bottom: 2px solid #dee2e6;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.recipients-header h3 {
+    margin: 0;
+    color: #333;
+}
+
+.recipient-entry {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+    align-items: center;
+}
+
+.recipient-entry:last-child {
+    border-bottom: none;
+}
+
+.recipient-name {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.recipient-email {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.recipient-item {
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+}
+
+.recipient-item.selected {
+    background-color: rgba(40, 167, 69, 0.1);
+    border-left-color: #28a745;
+}
+
+.recipient-item label {
+    display: block;
+    margin-left: 30px;
+}
+
+.recipient-email {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.recipient-item input[type="checkbox"] {
+    float: left;
+    margin-top: 8px;
+    accent-color: #28a745;
+    width: 20px;
+    height: 20px;
+}
+
+.email-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.send-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.send-button:hover {
+    background-color: #218838;
+}
+
+.send-button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+/* Add styles for the broadcast button when selected */
+.broadcast-button.selected {
+    background-color: #28a745 !important;
+    transform: scale(1.02);
+}
+
+/* Add these styles for the broadcast button and toast notification */
+.broadcast-button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.broadcast-button:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
+
+.broadcast-button:active {
+    transform: scale(0.98);
+}
+
+.broadcast-button.selected {
+    background-color: #28a745 !important;
+    transform: scale(1.02);
+}
+
+/* Toast notification styles */
+#toast-notification {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1000;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+#toast-notification.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.add-recipient-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.add-recipient-button:hover {
+    background-color: #45a049;
+}
+
+.recipient-item {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    border-left: 4px solid #4CAF50;
+}
+
+.email-add-button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.email-add-button:hover {
+    background-color: #0056b3;
+}
+
+.email-recipient {
+    background-color: #f8f9fa;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+}
+
+.extra-actions {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.quick-add-button {
+    background-color: #6c5ce7;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.quick-add-button:hover {
+    background-color: #5f4dd1;
+    transform: translateY(-2px);
+}
+
+.quick-add-button:active {
+    transform: translateY(0);
+} 
