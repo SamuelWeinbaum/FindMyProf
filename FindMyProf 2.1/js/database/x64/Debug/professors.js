@@ -34,6 +34,17 @@ office: 'RPHYS 201',
 officeHours: 'Monday 1pm-3pm',
 researchInterests: ['Quantum Mechanics'],
 acceptingStudents: false
+},
+{
+id: 'phys2',
+name: 'Dr. Weinbaum',
+shortBio: 'Yeah, I took GR in winter U1, no biggie.',
+fullBio: 'Dr. Weinbaum is currently leading a project called FindMyProf, where students can find professors to do research with in a centralized website. Looking good so far!',
+email: 'shmuly@yahoo.com',
+office: 'SUMS Lounge',
+officeHours: 'None',
+researchInterests: ['General Relativity','Topology','Experimental Methods'],
+acceptingStudents: false
 }
 ]
 };
