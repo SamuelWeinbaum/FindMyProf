@@ -13,13 +13,13 @@ acceptingStudents: true
 },
 {
 id: 'math2',
-name: 'Dr. Paul',
-shortBio: 'He\'s on TV!',
-fullBio: 'He is a very mean person.',
-email: 'paul@paul.paul',
-office: 'Paul\'s Office',
-officeHours: 'Paul Studios',
-researchInterests: ['Paul'],
+name: 'Dr. Johan',
+shortBio: 'Johan loves gosha.',
+fullBio: 'Johan describes the topology of caracals.',
+email: 'johan@mail.ca',
+office: 'LEA 132',
+officeHours: 'Never',
+researchInterests: ['Cats'],
 acceptingStudents: false
 }
 ],
@@ -34,17 +34,6 @@ office: 'RPHYS 201',
 officeHours: 'Monday 1pm-3pm',
 researchInterests: ['Quantum Mechanics'],
 acceptingStudents: false
-},
-{
-id: 'phys2',
-name: 'Dr. Weinbaum',
-shortBio: 'He looks a lot like GigaChad',
-fullBio: 'He loves topoligcal manifolds and how they relate to general relativity.',
-email: 'wb@edu.mail',
-office: 'SUMS Lounge',
-officeHours: 'Tuesdays 7am-9pm',
-researchInterests: ['Topology','General Relativity','ODEs'],
-acceptingStudents: true
 }
 ]
 };

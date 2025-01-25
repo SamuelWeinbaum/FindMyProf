@@ -10,6 +10,17 @@ office: 'Math Building 301',
 officeHours: 'Monday, Wednesday 2-4pm',
 researchInterests: ['Algebra','Number Theory'],
 acceptingStudents: true
+},
+{
+id: 'math2',
+name: 'Dr. Johan',
+shortBio: 'Johan loves gosha.',
+fullBio: 'Johan describes the topology of caracals.',
+email: 'johan@mail.ca',
+office: 'LEA 132',
+officeHours: 'Never',
+researchInterests: ['Cats'],
+acceptingStudents: false
 }
 ],
 physics: [
@@ -23,6 +34,17 @@ office: 'RPHYS 201',
 officeHours: 'Monday 1pm-3pm',
 researchInterests: ['Quantum Mechanics'],
 acceptingStudents: false
+},
+{
+id: 'phys2',
+name: 'Dr. Calm',
+shortBio: 'He\'s a chill guy.',
+fullBio: 'Calm knows how to control his class.',
+email: 'calm@mail.ca',
+office: 'None',
+officeHours: 'None',
+researchInterests: ['Serenity','Orbital Mechanics'],
+acceptingStudents: true
 }
 ]
 };

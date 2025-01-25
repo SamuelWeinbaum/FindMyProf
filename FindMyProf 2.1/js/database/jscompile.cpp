@@ -64,16 +64,5 @@ void js_compile(Database* db) {
 	//file << "\n]\n";
 	file << "};\n";
 	fprint_helpfunc(&file);
+	file.close();
 }
-
-/*file << "math: [\n{\n";
-	for (int i = 0, j = 1; i < db->size; i++) {
-		if (db->get_rec(i).department == "Math") {
-			if (j != 1)
-				file << ",\n";
-			file << "id: 'math" << j << "',\n";
-			file << prof_data(db, i);
-			file << "}";
-			j++;
-		}
-	}*/

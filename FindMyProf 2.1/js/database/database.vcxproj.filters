@@ -32,5 +32,8 @@
     <ClInclude Include="jscompile.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="headers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

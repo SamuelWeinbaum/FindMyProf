@@ -1,5 +1,4 @@
 Math|Dr. Sarah Johnson|Specializes in Number Theory and Cryptography|Dr. Johnson has been teaching mathematics for over 15 years, with a focus on number theory and its applications in cryptography.|sjohnson@university.edu|Math Building 301|Monday, Wednesday 2-4pm|2|Algebra,Number Theory|1
 Physics|Dr. Lee|Dr. Lee loves physics!|Dr. Lee is a teacher first and a researcher second, making him an unconventional university professor.|lee@uni.edu.ca|RPHYS 201|Monday 1pm-3pm|1|Quantum Mechanics|0
-Computer Science|Dr. Pee Nuts|Loves C++|Dr. Nuts is nuts for object oriented programming.|peenuts@uni.edu.ca|BURNS 321|Friday 11am-12pm|2|C++,OOP|1
-Physics|Dr. Weinbaum|He looks a lot like GigaChad|He loves topoligcal manifolds and how they relate to general relativity.|wb@edu.mail|SUMS Lounge|Tuesdays 7am-9pm|3|Topology,General Relativity,ODEs|1
-Math|Dr. Paul|He\'s on TV!|He is a very mean person.|paul@paul.paul|Paul\'s Office|Paul Studios|1|Paul|0
+Computer Science|Dr. Nuts of Pee|Loves C++|Dr. Nuts is nuts for object oriented programming.|peenuts@uni.edu.ca|BURNS 321|Friday 11am-12pm|2|C++,OOP|1
+Math|Dr. Johan|Johan loves gosha.|Johan describes the topology of caracals.|johan@mail.ca|LEA 132|Never|1|Cats|0
