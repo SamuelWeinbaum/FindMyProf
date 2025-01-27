@@ -45,6 +45,17 @@ office: 'SUMS Lounge',
 officeHours: 'None',
 researchInterests: ['General Relativity','Topology','Experimental Methods'],
 acceptingStudents: false
+},
+{
+id: 'phys3',
+name: 'the',
+shortBio: 'the',
+fullBio: 'the',
+email: 'the',
+office: 'the',
+officeHours: 'the',
+researchInterests: ['the'],
+acceptingStudents: true
 }
 ]
 };
