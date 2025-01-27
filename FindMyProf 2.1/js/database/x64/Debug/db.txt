@@ -3,3 +3,4 @@ Physics|Dr. Lee|Dr. Lee loves physics!|Dr. Lee is a teacher first and a research
 Computer Science|Dr. Nuts of Pee|Loves C++|Dr. Nuts is nuts for object oriented programming.|peenuts@uni.edu.ca|BURNS 321|Friday 11am-12pm|2|C++,OOP|1
 Math|Dr. Johan|Johan loves gosha.|Johan describes the topology of caracals.|johan@mail.ca|LEA 132|Never|1|Cats|0
 Physics|Dr. Weinbaum|Yeah, I took GR in winter U1, no biggie.|Dr. Weinbaum is currently leading a project called FindMyProf, where students can find professors to do research with in a centralized website. Looking good so far!|shmuly@yahoo.com|SUMS Lounge|None|3|General Relativity,Topology,Experimental Methods|0
+the|the|the|the|the|the|the|1|the|1
