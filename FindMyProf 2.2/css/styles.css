@@ -1,0 +1,280 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #e00000; /* Updated red color */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-actions {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Standardized Button Style */
+button,
+.compose-button,
+.profile-link,
+.action-buttons button,
+.broadcast-button,
+.add-recipient-button,
+.email-add-button,
+.quick-add-button,
+.send-button {
+    background-color: #f0f2f5; /* Lighter gray background */
+    color: #e00000; /* Updated red text */
+    padding: 8px 16px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline for links */
+    font-weight: bold; /* Bold text */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover Effect for Buttons */
+button:hover,
+.compose-button:hover,
+.profile-link:hover,
+.action-buttons button:hover,
+.broadcast-button:hover,
+.add-recipient-button:hover,
+.email-add-button:hover,
+.quick-add-button:hover,
+.send-button:hover {
+    background-color: #e9ecef; /* Slightly darker gray on hover */
+}
+
+main {
+    padding: 20px;
+    min-height: calc(100vh - 140px);
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: #fff; /* White sections for contrast */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.recipients-header {
+    text-align: center; /* Center-align the department title */
+    margin-bottom: 20px; /* Add spacing below the title */
+}
+
+.recipients-header h3 {
+    margin: 0;
+    color: #e00000; /* Updated red title color */
+    font-size: 24px; /* Adjust font size for better visibility */
+    font-weight: bold;
+}
+
+.subject-container {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons horizontally */
+    gap: 15px; /* Add spacing between buttons */
+}
+
+.subject-item {
+    margin: 0; /* Remove default margin */
+    border-radius: 5px;
+    background-color: #f0f2f5; /* Lighter gray background for better visibility */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    width: fit-content;
+}
+
+.subject-link {
+    display: block;
+    padding: 10px 20px;
+    color: #e00000; /* Updated red text for better contrast */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+.subject-item:hover {
+    background-color: #e9ecef; /* Slightly darker gray on hover */
+}
+
+.profile {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 3px solid transparent;
+}
+
+.available {
+    border-color: #28a745;
+}
+
+.unavailable {
+    border-color: #dc3545;
+    opacity: 0.7;
+}
+
+footer {
+    background-color: #f8f9fa; /* Match the body background */
+    color: #000; /* Black text */
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+
+.status-indicator {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.status-indicator.available {
+    background-color: rgba(40, 167, 69, 0.1);
+    color: #28a745;
+}
+
+.status-indicator.unavailable {
+    background-color: rgba(220, 53, 69, 0.1);
+    color: #dc3545;
+}
+
+/* Email composer styles */
+.email-composer {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.recipient-list {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.recipient-entry {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+    align-items: center;
+}
+
+.recipient-entry:last-child {
+    border-bottom: none;
+}
+
+.recipient-name {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.recipient-email {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.recipient-item {
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f0f2f5; /* Lighter gray background */
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+}
+
+.recipient-item.selected {
+    background-color: rgba(40, 167, 69, 0.1);
+    border-left-color: #28a745;
+}
+
+.recipient-item label {
+    display: block;
+    margin-left: 30px;
+}
+
+.recipient-email {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.recipient-item input[type="checkbox"] {
+    float: left;
+    margin-top: 8px;
+    accent-color: #28a745;
+    width: 20px;
+    height: 20px;
+}
+
+.email-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Toast notification styles */
+#toast-notification {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1000;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+#toast-notification.show {
+    visibility: visible;
+    opacity: 1;
+}
